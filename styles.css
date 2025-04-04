@@ -55,7 +55,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    background: #9FAC9C;
+    background: #CCCCFF;
     padding: 15px 0;
 }
 
@@ -101,6 +101,12 @@ nav ul li a {
     color: var(--primary-color);
 }
 
+/* Added color gradient using https://www.w3schools.com/css/css3_gradients.asp */
+#contact{
+  
+        background-image: linear-gradient(to right,#90d5ff , #CCCCFF);
+}
+
 .profile-photo {
     max-width: 40%;
     height: auto;
@@ -108,7 +114,7 @@ nav ul li a {
 }
 
 #portfolio {
-    background-color: #9FAC9C;
+    background-color: #CCCCFF;
     padding: 15px;
     border-radius: 0.5%;
     text-align: center;
@@ -349,3 +355,4 @@ button.btn:hover {
     font-size: 16px;
     line-height: 1.5;
 }
+

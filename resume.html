@@ -6,13 +6,12 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"> 
-    <!-- Loads a Google font that I found and I really felt like it fit the vibe of my website. Used https://developers.google.com/fonts/docs/getting_started to help me.-->
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 
-<body>
-  <script src="script.js"></script>
-</body>
+<body class="resume">
+    <script src="script.js"></script>
+
     <header class="resume-background">
         <nav>
             <ul>
@@ -22,7 +21,10 @@
                 <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
-        <div id = "technologies">
+
+        <div class="animated-bg"></div> <!-- Animated Background -->
+
+        <div id="technologies">
             <h2>Technologies I Know</h2>
             <ul>
                 <li>Python</li>
@@ -36,26 +38,28 @@
                 <li>ARM Assembly</li>
                 <li>Lua</li>
                 <li>C#</li>
-            </ul>
+            </ul>   
         </div>
-      </header>
-        <div id = "work">
-          <h2><a href="https://github.com/rhit-rameshr/ARPSniffer">Work Experience</a></h2>
-          <img src="scapy.png" alt="Scapy Logo">
-          <p>During my internship as a Cyber Security Engineer at FortunaPIX from June to September 2022, I applied my expertise in network protocols by utilizing virtualization software to simulate and analyze IP and MAC address configurations. I took the initiative to develop a sophisticated network monitoring tool using Python and Scapy, which allowed for packet sniffing and real-time tracking of all devices on a specific network. Additionally, I designed and implemented a dynamic HTML page integrated with JavaScript to visualize and display the real-time data of connected devices, providing a comprehensive and user-friendly interface for network monitoring.</p>
-        </div>
-        <div id = "education">
-          <h2>Education</h2>
-          <img src="rose.png" alt="Rose-Hulman Logo">
-          <p>I am currently a sophomore studying computer science, minoring in Artificial Intelligence, Data Science, and Political Science at Rose-Hulman Institute of Technology in Terre Haute, Indiana.</p>
-        </div>
-    
-    <br>
-<footer>
-    <p>Copyright © 2025 Rishi Ramesh — All Rights Reserved</p>
-    <a href="https://www.linkedin.com/in/rishvanth-ramesh-7511341ab/">Linkedin</a>
-    <a href="https://github.com/rhit-rameshr">Github</a>
-    <a href="https://www.facebook.com/rishvanth.ramesh.9/">Facebook</a>
-</footer>
+    </header>
 
-    
+    <div id="work">
+        <h2><a href="https://github.com/rhit-rameshr/ARPSniffer">Work Experience</a></h2>
+        <img src="scapy.png" alt="Scapy Logo">
+        <p>During my internship as a Cyber Security Engineer at FortunaPIX from June to September 2022, I applied my expertise in network protocols by utilizing virtualization software to simulate and analyze IP and MAC address configurations. I developed a sophisticated network monitoring tool using Python and Scapy, which allowed for packet sniffing and real-time tracking of all devices on a specific network. Additionally, I designed and implemented a dynamic HTML page integrated with JavaScript to visualize and display the real-time data of connected devices.</p>
+    </div>
+
+    <div id="education">
+        <h2>Education</h2>
+        <img src="rose.png" alt="Rose-Hulman Logo">
+        <p>I am currently a sophomore studying Computer Science, minoring in Artificial Intelligence, Data Science, and Political Science at Rose-Hulman Institute of Technology in Terre Haute, Indiana.</p>
+    </div>
+
+    <br>
+    <footer>
+        <p>Copyright © 2025 Rishi Ramesh — All Rights Reserved</p>
+        <a href="https://www.linkedin.com/in/rishvanth-ramesh-7511341ab/">LinkedIn</a>
+        <a href="https://github.com/rhit-rameshr">GitHub</a>
+        <a href="https://www.facebook.com/rishvanth.ramesh.9/">Facebook</a>
+    </footer>
+</body>
+</html>
