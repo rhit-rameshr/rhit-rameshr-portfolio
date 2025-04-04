@@ -1,7 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    
+
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+    <header class="header-background">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href = "resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <div class="header-content">
+            <img src="./rishi.jpg" alt="Profile Photo of Rishi">
+            <h1>Hi, my name is Rishi Ramesh!</h1>
+            <p>Software Developer | Computer Science Student | Tech Enthusiast</p>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>~ About Me ~</h2>
+            <p>
+                I am Rishi Ramesh, a passionate software developer with a robust foundation in various programming languages and technologies. With 2 years of Python expertise and 1 year each of Java, C, and ARM assembly, I've honed my skills across multiple facets of software engineering. My keen interest in artificial intelligence drives my continuous exploration of cutting-edge AI technologies, including Large Language Models (LLMs) and Generative Adversarial Networks (GANs). My diverse skill set and enthusiasm for innovation make me a dynamic force in the tech world, ready to tackle complex challenges and contribute to the future of AI.
+            </p>
+        </section>
+        <section id="contact">
+            <h2>~ Keep in Touch ~</h2>
+            <p>
+                Email: rishvanth.ramesh1@gmail.com
+            </p>
+            <p>
+                Phone: 925-725-5849
+            </p>
+            <!-- I'm using a website called Formspree that I've used before to get messages from users. It sets up a way for people's messages to come directly to the email that you logged into Formspree with. I changed the CSS of the button because the way that the website wanted me to implement was really boring. -->
+            <form action="https://formspree.io/f/mjkyawgj" method="POST">
+                <label>
+                    Your email:
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message" required></textarea>
+                </label>
+                <button type="submit" class="btn btn-default td-btn outline white">Send</button>
+            </form>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2025 Rishi Ramesh — All Rights Reserved</p>
+        <a href="https://www.linkedin.com/in/rishvanth-ramesh-7511341ab/">Linkedin</a>
+        <a href="https://github.com/rhit-rameshr">Github</a>
+        <a href="https://www.facebook.com/rishvanth.ramesh.9/">Facebook</a>
+    </footer>

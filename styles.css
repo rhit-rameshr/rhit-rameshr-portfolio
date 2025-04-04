@@ -1,0 +1,351 @@
+:root {
+    --primary-color: #525e66;
+    --text-color: #525E66; 
+    --background-light: #e0f2fe; 
+    --header-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 110%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', 'Work Sans', Helvetica, sans-serif;
+    color: var(--text-color);
+    line-height: 1.5;
+    background-color: var(--background-light);
+    overflow-x: hidden;
+}
+
+.resume-background {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#technologies ul {
+    justify-content: left;
+    align-items: start;
+    text-align: left;
+}
+
+.header-background {
+    background: linear-gradient(rgba(224, 242, 254, 0.7), rgba(224, 242, 254, 0.9)),
+                url("https://i.imgur.com/TAn6FWz.jpg") center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #9FAC9C;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', 'Unica One', cursive;
+    font-size: 1.2rem;
+}
+
+.header-content img {
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+.header-content h1, .header-content p {
+    margin: 0.5rem 0;
+    font-family: 'JetBrains Mono', 'Unica One', cursive;
+}
+
+#about {
+    background-color: var(--background-light);
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 40px;
+    border-radius: 0.5%;
+    text-align: center;
+}
+
+#about h2, #contact h2 {
+    color: var(--primary-color);
+}
+
+.profile-photo {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#portfolio {
+    background-color: #9FAC9C;
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#portfolio h2 {
+    color: white;
+}
+
+.project {
+    width: 200px;
+    height: auto;
+    border: 1px solid #60a5fa;
+    margin: 10px;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#contact {
+    background-color: #9FAC9C; 
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+    color: white;
+}
+
+.td-btn {
+    padding: 12px 36px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    background-color: #e0f2fe;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #e0f2fe;
+    color: #1e3a8a;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+footer a {
+    color: #525e66; 
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+footer a:hover {
+    color: #005bb5; 
+}
+
+h2 {
+    font-family: 'JetBrains Mono', 'Unica One', cursive;
+    font-size: 2.3rem;
+}
+
+a {
+    color: var(--primary-color);
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #005bb5; 
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .profile-photo {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #slideshow {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide-wrapper {
+        width: 300%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    color: #fff; 
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button.btn {
+    background-color: lightblue;
+    color: darkblue;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #C2C9DB;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#technologies h2 {
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#work p {
+    padding-left: 10px;
+}
+
+#work h2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#work img {
+    display: block; 
+    margin: 20px auto; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+#education {
+    text-align: center;
+}
+
+#education h2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#education p {
+    margin: 5px auto;
+}
+
+#education img {
+    display: block; 
+    margin: 10px auto;
+    max-width: 80%;
+    height: auto; 
+}
+
+#soccer {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; 
+    padding: 10px;
+}
+
+#soccer img {
+    width: 150px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+#soccer .description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#java {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px;
+}
+
+#java img {
+    width: 150px; 
+    height: auto;
+    border-radius: 8px;
+}
+
+#java .description {
+    font-size: 16px;
+    line-height: 1.5;
+}
